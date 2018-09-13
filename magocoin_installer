@@ -2,7 +2,7 @@
 
 SCRIPTVER=3.0.2
 CONFIG_FILE='magocoin.conf'
-CONFIGFOLDER=$(eval echo $HOME/.worx)
+CONFIGFOLDER=$(eval echo $HOME/.magocoin)
 CFFULLPATH=$(eval echo $CONFIGFOLDER/$CONFIG_FILE)
 COIN_DAEMON='magocoind'
 COIN_CLI='magocoin-cli'
@@ -73,7 +73,7 @@ BgLtWhite='\E[107m'
 
 
 function purgeOldInstallation() {
-    echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations and making a backup to $HOME/WorxBackup if they exist ${NC}"
+    echo -e "${GREEN}Searching and removing old $COIN_NAME files and configurations and making a backup to $HOME/magocoinBackup if they exist ${NC}"
     if [[ -f $(eval echo $CONFIGFOLDER/wallet.dat) ]]; then
     echo -e "Exists, making backup${NC}" 
 if [[ ! -d $(eval echo $COIN_BACKUP) ]]; then    

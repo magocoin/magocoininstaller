@@ -45,9 +45,9 @@ echo "externalip=$YOURIP:22123"      >> /$HOME/.magocoin/magocoin.conf
 echo "masternodeprivkey=$MNKEY"      >> /$HOME/.magocoin/magocoin.conf
 echo "masternode=1"                  >> /$HOME/.magocoin/magocoin.conf
 echo " "                             >> /$HOME/.magocoin/magocoin.conf
-#echo "addnode=149.28.64.95:22123"   >> /$HOME/.magocoin/magocoin.conf
-#echo "addnode=149.28.98.168:22123"    >> /$HOME/.magocoin/magocoin.conf
-#echo "addnode=45.76.70.100:22123" >> /$HOME/.magocoin/magocoin.conf
+echo "addnode=149.28.64.95:22123"   >> /$HOME/.magocoin/magocoin.conf
+echo "addnode=149.28.98.168:22123"    >> /$HOME/.magocoin/magocoin.conf
+echo "addnode=45.76.70.100:22123" >> /$HOME/.magocoin/magocoin.conf
 
 
 echo "Starting magocoin client";

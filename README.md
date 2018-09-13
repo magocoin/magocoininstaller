@@ -1,0 +1,3 @@
+magocoin installer
+***
+

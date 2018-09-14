@@ -9,6 +9,7 @@ $SUDO apt-get -y update
 $SUDO apt-get -y upgrade
 $SUDO apt-get -y dist-upgrade
 $SUDO apt-get -y install git curl nano wget pwgen
+$SUDO apt-get install autoconf
 $SUDO apt-get -y install build-essential libtool automake autoconf autotools-dev autoconf pkg-config libssl-dev libgmp3-dev libevent-dev bsdmainutils libboost-all-dev libzmq3-dev libminiupnpc-dev libdb4.8-dev libdb4.8++-dev
 $SUDO apt-get -y update
 

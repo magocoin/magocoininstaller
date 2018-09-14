@@ -18,9 +18,8 @@ PSS=$(pwgen -1 20 -n)
 
 cd $HOME
 echo "Getting magocoin client";
-mkdir $HOME/magocoin
 git clone https://github.com/magocoin/magocoin.git
-cd $HOME/magocoin
+cd magocoin
 chmod +x autogen.sh
 chmod +x share/genbuild.sh
 ./autogen.sh

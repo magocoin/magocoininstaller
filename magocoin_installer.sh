@@ -18,7 +18,7 @@ YOURIP=$(curl -s4 api.ipify.org)
 PSS=$(pwgen -1 20 -n)
 
 cd $HOME
-echo "Getting magocoin client";
+echo "Getting fundamental client";
 git clone https://github.com/magocoin/fundamental.git
 cd fundamental
 chmod +x autogen.sh
@@ -33,21 +33,21 @@ read MNKEY
 
 mkdir $HOME/.fundamental
 
-echo "rpcuser=user"                   > /$HOME/.magocoin/magocoin.conf
-echo "rpcpassword=$PSS"              >> /$HOME/.magocoin/magocoin.conf
-echo "rpcallowip=127.0.0.1"          >> /$HOME/.magocoin/magocoin.conf
-echo "maxconnections=500"            >> /$HOME/.magocoin/magocoin.conf
-echo "daemon=1"                      >> /$HOME/.magocoin/magocoin.conf
-echo "server=1"                      >> /$HOME/.magocoin/magocoin.conf
-echo "listen=1"                      >> /$HOME/.magocoin/magocoin.conf
-echo "rpcport=22122"                 >> /$HOME/.magocoin/magocoin.conf
-echo "externalip=$YOURIP:22123"      >> /$HOME/.magocoin/magocoin.conf
-echo "masternodeprivkey=$MNKEY"      >> /$HOME/.magocoin/magocoin.conf
-echo "masternode=1"                  >> /$HOME/.magocoin/magocoin.conf
-echo " "                             >> /$HOME/.magocoin/magocoin.conf
-echo "addnode=149.28.64.95:32123"   >> /$HOME/.magocoin/magocoin.conf
-echo "addnode=149.28.98.168:32123"    >> /$HOME/.magocoin/magocoin.conf
-echo "addnode=45.76.70.100:32123" >> /$HOME/.magocoin/magocoin.conf
+echo "rpcuser=user"                   > /$HOME/.fundamental/fundamental.conf
+echo "rpcpassword=$PSS"              >> /$HOME/.fundamental/fundamental.conf
+echo "rpcallowip=127.0.0.1"          >> /$HOME/.fundamental/fundamental.conf
+echo "maxconnections=500"            >> /$HOME/.fundamental/fundamental.conf
+echo "daemon=1"                      >> /$HOME/.fundamental/fundamental.conf
+echo "server=1"                      >> /$HOME/.fundamental/fundamental.conf
+echo "listen=1"                      >> /$HOME/.fundamental/fundamental.conf
+echo "rpcport=22122"                 >> /$HOME/.fundamental/fundamental.conf
+echo "externalip=$YOURIP:22123"      >> /$HOME/.fundamental/fundamental.conf
+echo "masternodeprivkey=$MNKEY"      >> /$HOME/.fundamental/fundamental.conf
+echo "masternode=1"                  >> /$HOME/.fundamental/fundamental.conf
+echo " "                             >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=149.28.64.95:32123"   >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=149.28.98.168:32123"    >> /$HOME/.fundamentalfundamental.conf
+echo "addnode=45.76.70.100:32123" >> /$HOME/.fundamental/fundamental.conf
 
 
 echo "Starting fundamental client";

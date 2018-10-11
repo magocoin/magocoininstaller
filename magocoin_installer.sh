@@ -19,8 +19,8 @@ PSS=$(pwgen -1 20 -n)
 
 cd $HOME
 echo "Getting magocoin client";
-git clone https://github.com/magocoin/magocoin.git
-cd magocoin
+git clone https://github.com/magocoin/fundamental.git
+cd fundamental
 chmod +x autogen.sh
 chmod +x share/genbuild.sh
 ./autogen.sh
@@ -31,7 +31,7 @@ $SUDO make install
 echo "In order to proceed with the installation, please paste Masternode genkey by clicking right mouse button. Once masternode genkey is visible in the terminal please hit ENTER.";
 read MNKEY
 
-mkdir $HOME/.magocoin
+mkdir $HOME/.fundamental
 
 echo "rpcuser=user"                   > /$HOME/.magocoin/magocoin.conf
 echo "rpcpassword=$PSS"              >> /$HOME/.magocoin/magocoin.conf
@@ -45,15 +45,15 @@ echo "externalip=$YOURIP:22123"      >> /$HOME/.magocoin/magocoin.conf
 echo "masternodeprivkey=$MNKEY"      >> /$HOME/.magocoin/magocoin.conf
 echo "masternode=1"                  >> /$HOME/.magocoin/magocoin.conf
 echo " "                             >> /$HOME/.magocoin/magocoin.conf
-echo "addnode=149.28.64.95:22123"   >> /$HOME/.magocoin/magocoin.conf
-echo "addnode=149.28.98.168:22123"    >> /$HOME/.magocoin/magocoin.conf
-echo "addnode=45.76.70.100:22123" >> /$HOME/.magocoin/magocoin.conf
+echo "addnode=149.28.64.95:32123"   >> /$HOME/.magocoin/magocoin.conf
+echo "addnode=149.28.98.168:32123"    >> /$HOME/.magocoin/magocoin.conf
+echo "addnode=45.76.70.100:32123" >> /$HOME/.magocoin/magocoin.conf
 
 
-echo "Starting magocoin client";
-magocoind --daemon
+echo "Starting fundamental client";
+fundamentald --daemon
 sleep 5
 echo "Syncing...";
-until magocoin-cli mnsync status | grep -m 1 '"IsSynced": true'; do sleep 1 ; done > /dev/null 2>&1
-echo "Sync complete. You masternode is running!! you can start your masternode later with: magocoind --daemon";111
-echo "You can stop your masternode with: magocoin-cli stop"
+until fundamental-cli mnsync status | grep -m 1 '"IsSynced": true'; do sleep 1 ; done > /dev/null 2>&1
+echo "Sync complete. You masternode is running!! you can start your masternode later with: fundamentald --daemon";111
+echo "You can stop your masternode with: fundamental-cli stop"

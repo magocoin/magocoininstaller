@@ -28,7 +28,7 @@ chmod +x share/genbuild.sh
 make
 $SUDO make install
 
-echo "In order to proceed with the installation, please paste Masternode genkey by clicking right mouse button. Once masternode genkey is visible in the terminal please hit ENTER.";
+echo ${GREEN}"In order to proceed with the installation, ${RED}please paste Masternode genkey by clicking right mouse button. Once masternode genkey is visible in the terminal please hit ENTER.";
 read MNKEY
 
 mkdir $HOME/.fundamental

@@ -40,8 +40,8 @@ echo "maxconnections=500"            >> /$HOME/.fundamental/fundamental.conf
 echo "daemon=1"                      >> /$HOME/.fundamental/fundamental.conf
 echo "server=1"                      >> /$HOME/.fundamental/fundamental.conf
 echo "listen=1"                      >> /$HOME/.fundamental/fundamental.conf
-echo "rpcport=22122"                 >> /$HOME/.fundamental/fundamental.conf
-echo "externalip=$YOURIP:22123"      >> /$HOME/.fundamental/fundamental.conf
+echo "rpcport=32122"                 >> /$HOME/.fundamental/fundamental.conf
+echo "externalip=$YOURIP:32123"      >> /$HOME/.fundamental/fundamental.conf
 echo "masternodeprivkey=$MNKEY"      >> /$HOME/.fundamental/fundamental.conf
 echo "masternode=1"                  >> /$HOME/.fundamental/fundamental.conf
 echo " "                             >> /$HOME/.fundamental/fundamental.conf

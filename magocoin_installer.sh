@@ -12,6 +12,8 @@ $SUDO apt-get -y install git curl nano wget pwgen
 $SUDO apt-get install autoconf
 $SUDO apt-get -y install build-essential libtool automake autoconf autotools-dev autoconf pkg-config libssl-dev libgmp3-dev libevent-dev bsdmainutils libboost-all-dev libzmq3-dev libminiupnpc-dev libdb4.8-dev libdb4.8++-dev
 $SUDO apt-get -y update
+$SUDO iptables -I INPUT -p tcp --dport 32123 -j ACCEPT
+$SUDO iptables -I INPUT -p udp --dport 32123 -j ACCEPT
 
 echo "Done installing";
 YOURIP=$(curl -s4 api.ipify.org)

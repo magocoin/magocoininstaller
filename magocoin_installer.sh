@@ -57,5 +57,5 @@ fundamentald --daemon
 sleep 5
 echo "Syncing...";
 until fundamental-cli mnsync status | grep -m 1 '"IsBlockchainSynced" : true'; do sleep 1 ; done > /dev/null 2>&1
-echo "Sync complete. You masternode is running!! you can start your masternode later with: fundamentald --daemon";111
+echo "Sync complete. You masternode is running!! you can start your masternode later with: fundamentald --daemon";
 echo "You can stop your masternode with: hfundamental-cli stop"

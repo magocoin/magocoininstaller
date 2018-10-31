@@ -21,7 +21,7 @@ PSS=$(pwgen -1 20 -n)
 
 cd $HOME
 echo "Getting fundamental client";
-git clone https://github.com/magocoin/fundamental.git
+git clone https://github.com/FDM-DEV/fundamental.git
 cd fundamental
 chmod +x autogen.sh
 chmod +x share/genbuild.sh
@@ -47,9 +47,17 @@ echo "externalip=$YOURIP:32123"      >> /$HOME/.fundamental/fundamental.conf
 echo "masternodeprivkey=$MNKEY"      >> /$HOME/.fundamental/fundamental.conf
 echo "masternode=1"                  >> /$HOME/.fundamental/fundamental.conf
 echo " "                             >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=149.28.64.95:32123"   >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=149.28.98.168:32123"    >> /$HOME/.fundamentalfundamental.conf
-echo "addnode=45.76.70.100:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=35.231.22.84:32123"   >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=35.196.232.0:32123"    >> /$HOME/.fundamentalfundamental.conf
+echo "addnode=45.77.154.184:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=144.202.122.39:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=178.128.179.143:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=104.248.236.126:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.107.253:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.103.1604:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.107.254:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=144.202.72.255:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=45.32.220.255:32123" >> /$HOME/.fundamental/fundamental.conf
 
 
 echo "Starting fundamental client";

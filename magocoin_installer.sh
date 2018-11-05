@@ -43,17 +43,17 @@ echo "listen=1"                      >> /$HOME/.fundamental/fundamental.conf
 echo "rpcport=22122"                 >> /$HOME/.fundamental/fundamental.conf
 echo "externalip=$YOURIP:22123"      >> /$HOME/.fundamental/fundamental.conf
 echo " "                             >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=35.231.22.84:32123"   >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=35.196.232.0:32123"    >> /$HOME/.fundamentalfundamental.conf
-echo "addnode=45.77.154.184:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=144.202.122.39:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=178.128.179.143:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=104.248.236.126:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=68.183.107.253:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=68.183.103.1604:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=68.183.107.254:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=144.202.72.255:32123" >> /$HOME/.fundamental/fundamental.conf
-echo "addnode=45.32.220.255:32123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=35.231.22.84:22123"   >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=35.196.232.0:22123"    >> /$HOME/.fundamentalfundamental.conf
+echo "addnode=45.77.154.184:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=144.202.122.39:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=178.128.179.143:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=104.248.236.126:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.107.253:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.103.1604:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=68.183.107.254:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=144.202.72.255:22123" >> /$HOME/.fundamental/fundamental.conf
+echo "addnode=45.32.220.255:22123" >> /$HOME/.fundamental/fundamental.conf
 
 
 echo "Starting fundamental client";

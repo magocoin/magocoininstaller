@@ -21,7 +21,7 @@ PSS=$(pwgen -1 20 -n)
 
 cd $HOME
 echo "Getting fundamental client";
-git clone https://github.com/FDM-DEV/fundamental.git
+git clone https://github.com/FDM-DEV/FDM.git
 cd fundamental
 chmod +x autogen.sh
 chmod +x share/genbuild.sh

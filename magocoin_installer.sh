@@ -43,18 +43,22 @@ echo "listen=1"                      >> /$HOME/.FDM/FDM.conf
 echo "rpcport=22122"                 >> /$HOME/.FDM/FDM.conf
 echo "externalip=$YOURIP:22123"      >> /$HOME/.FDM/FDM.conf
 echo " "                             >> /$HOME/.FDM/FDM.conf
-echo "addnode=35.231.22.84:22123"   >> /$HOME/.FDM/FDM.conf
-echo "addnode=35.196.232.0:22123"    >> /$HOME/.FDM/FDM.conf
-echo "addnode=45.77.154.184:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=144.202.122.39:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=178.128.179.143:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=104.248.236.126:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=68.183.107.253:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=68.183.103.1604:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=68.183.107.254:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=144.202.72.255:22123" >> /$HOME/.FDM/FDM.conf
-echo "addnode=45.32.220.255:22123" >> /$HOME/.FDM/FDM.conf
-
+echo "addnode=104.248.25.183:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=142.93.99.196:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=165.227.105.10:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=209.97.153.36:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=142.93.99.196:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=167.99.168.8:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=138.197.14.77:22123" >> /$HOME/.FDM/FDM.conf
+echo "addnode=206.189.180.208:22123" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=104.248.25.183" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=142.93.99.196" >> /$HOME/.FDM/FDM.conf
+echo "awhitelist=165.227.105.10" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=209.97.153.36" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=142.93.99.196" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=167.99.168.8" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=138.197.14.77" >> /$HOME/.FDM/FDM.conf
+echo "whitelist=206.189.180.208" >> /$HOME/.FDM/FDM.conf
 
 echo "Starting fundamental client";
 FDMd --daemon -server
